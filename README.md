@@ -1,0 +1,2 @@
+# newStock
+newStock
