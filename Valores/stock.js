@@ -1,24 +1,24 @@
 
 function añadir()
 {
-    console.log("hola")
-    array.push(entrada.value);
+   no
     var p = document.createElement("li");
 
-    p.innerHTML ="<p id='p2'>" + entrada.value + " " +"<button id='borrar' class='eliminar'>" + "X" +"</button>" + "<input type='checkbox' id='check'>"+ "</p>" ; 
+    p.innerHTML ="<p id='p2'>" + entrada.value + "<input type='checkbox' id='check'>"+ "</p>" ; 
     lista.appendChild(p);
    
     console.log(array)
-   var borrar = document.getElementById('borrar');
-   borrar.addEventListener("click", eliminar);
+  
 
-   botonesEliminar = document.getElementsByClassName('eliminar');
+   
     var p2 = document.getElementById("p2");
 
-   Array.from(botonesEliminar).forEach(botonEliminar =>{
+   /*Array.from(botonesEliminar).forEach(botonEliminar =>{
     botonEliminar.onclick = eliminar;
     console.log("botoncitos")})
-check = false;
+    check = false;*/
+
+    borrar.addEventListener("click", eliminar);
    function eliminar()
    {
      
@@ -32,7 +32,7 @@ if(check.checked)
     }
  console.log(botonesEliminar)
  var check = document.getElementById("check")
-   check.addEventListener("click",eliminar)
+  
 
 
 entrada.value='';
@@ -47,4 +47,7 @@ botonAñadir.addEventListener("click", añadir);
 var contador = 1;
 var array = [];
 botonesEliminar = null;
+var borrar = document.getElementById('borrar');
+var cosaslocas;
+var otrascOSAS;
 
