@@ -1,0 +1,64 @@
+
+body
+{
+    /*background-image: url(https://www.ceupe.com/images/easyblog_images/168/b2ap3_thumbnail_almacen.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    
+    
+}
+
+header
+{
+    text-align: center;
+}
+
+.input-text
+{
+    color: rgb(233, 250, 0);
+    background-color: rgb(39, 26, 5);
+    font-family:monospace;
+}
+
+
+.lista1
+{
+    float: inline-start;
+    
+    
+
+}
+
+
+.padre
+{
+    
+   
+    
+}
+
+
+.lista
+{
+    color: yellow;
+    background-color: black;
+    font-size:130%;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+}
+
+
+
+
+
+.parrafo
+{
+
+    border-bottom: 1px solid rgb(2, 2, 255);
+    border-right: 1px solid rgb(2, 2, 255);
+    
+}
+

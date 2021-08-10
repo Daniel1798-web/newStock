@@ -1,16 +1,21 @@
 // Metodo daniel
 function añadir() {
   //Verificamos que el input no este vacio
-  if(entrada.value){
+  
+
+  if(entrada.value)
+  {
     const id = contador;
     contador++;
     var li = document.createElement("li");
-    // p.innerHTML = "<p id='p2'>" + entrada.value + "<input type='checkbox' id='check'>" + "</p>";
+    li.className = "padre"
+ 
     //Diferenciamos las ID de los elementos
-    li.innerHTML = `<p id="p${id}">${entrada.value}<input type="checkbox" id="check${id}"></p>`;
+    li.innerHTML = `<p id="p${id}" class="parrafo">${entrada.value}<input type="checkbox" id="check${id}"></p>`;
     lista.appendChild(li);
     var p = document.getElementById(`p${id}`);
     borrar.addEventListener("click", eliminar);
+
     function eliminar() {
       if (check.checked) {
         li.remove(p)
@@ -19,15 +24,22 @@ function añadir() {
         borrar.removeEventListener('click', eliminar);
       }
     }
-    console.log(botonesEliminar)
+    
     var check = document.getElementById(`check${id}`);
     entrada.value = '';
   }
+   
+  else if(entrada.value = " " )
+  {
+    alert("Añade un producto")
+  }
+
 };
 
 var lista = document.getElementById("ul");
 var entrada = document.getElementById("inputTexto");
 var botonAñadir = document.getElementById("botonAñadir");
+var botonFiambre = document.getElementById("fechaCorta")
 botonAñadir.addEventListener("click", añadir);
 var contador = 1;
 var borrar = document.getElementById('borrar');
