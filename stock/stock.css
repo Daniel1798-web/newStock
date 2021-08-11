@@ -9,6 +9,11 @@ body
     
 }
 
+.mensaje
+{
+    color: red;
+}
+
 header
 {
     text-align: center;

@@ -7,7 +7,10 @@ function añadir() {
   {
     const id = contador;
     contador++;
-    var li = document.createElement("li");
+   
+    
+   
+var li = document.createElement("li");
     li.className = "padre"
  
     //Diferenciamos las ID de los elementos
@@ -15,34 +18,58 @@ function añadir() {
     lista.appendChild(li);
     var p = document.getElementById(`p${id}`);
     borrar.addEventListener("click", eliminar);
-
-    function eliminar() {
-      if (check.checked) {
-        li.remove(p)
-        console.log("checkeado")
-        //Eliminamos el eventListener
-        borrar.removeEventListener('click', eliminar);
-      }
-    }
-    
     var check = document.getElementById(`check${id}`);
+ 
+    
+  
     entrada.value = '';
   }
+
+  
+
+ 
+
    
   else if(entrada.value = " " )
   {
-    alert("Añade un producto")
+
+    alert("Escribe algo tio")
+    entrada.value = ""
   }
+
+
+
+  function eliminar() {
+    if (check.checked) {
+      li.remove(p)
+      console.log("checkeado")
+      //Eliminamos el eventListener
+      borrar.removeEventListener('click', eliminar);
+    }
+
+    
+}
 
 };
 
-var lista = document.getElementById("ul");
+
+
+
+var lista = document.getElementById("lista2");
 var entrada = document.getElementById("inputTexto");
 var botonAñadir = document.getElementById("botonAñadir");
 var botonFiambre = document.getElementById("fechaCorta")
 botonAñadir.addEventListener("click", añadir);
 var contador = 1;
 var borrar = document.getElementById('borrar');
+
+
+
+
+
+
+
+
 
 //Metodo kayrox
 // /**@type {Array<{ li: HTMLLIElement, check: HTMLInputElement }>} */
