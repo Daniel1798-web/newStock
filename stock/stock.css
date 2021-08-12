@@ -1,10 +1,7 @@
 
 body
 {
-    /*background-image: url(https://www.ceupe.com/images/easyblog_images/168/b2ap3_thumbnail_almacen.png); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100%;
+   
     text-align: center;
     
 }
@@ -87,7 +84,7 @@ header
     font-size:130%;
     width:500px;
     padding: 2px;
-    position: fixed;
+    position: ;
     text-align: start;
     list-style: none;
     border-top: 2px solid black;
