@@ -8,14 +8,15 @@ function añadir() {
     const id = contador;
     contador++;
    
+  
     
    
-var li = document.createElement("li");
-    li.className = "padre"
+  var li = document.createElement("li");
+    li.className = "linew"
  
     //Diferenciamos las ID de los elementos
-    li.innerHTML = `<p id="p${id}" class="parrafo">${entrada.value}<input type="checkbox" id="check${id}"></p>`;
-    lista.appendChild(li);
+    li.innerHTML = `<p id="p${id}" class="nar">${entrada.value}<input type="checkbox" id="check${id}" class="check"></p>`;
+    lista1.appendChild(li);
     var p = document.getElementById(`p${id}`);
     borrar.addEventListener("click", eliminar);
     var check = document.getElementById(`check${id}`);
@@ -25,12 +26,10 @@ var li = document.createElement("li");
     entrada.value = '';
   }
 
-  
-
- 
-
    
-  else if(entrada.value = " " )
+
+  
+   else if(entrada.value = " " )
   {
 
     alert("Escribe algo tio")
@@ -39,29 +38,94 @@ var li = document.createElement("li");
 
 
 
+   
+
+
   function eliminar() {
-    if (check.checked) {
+  if(check.checked)
+  {
+
+  
+    li.remove(p)
+    console.log("checkeado")
+    //Eliminamos el eventListener
+    borrar.removeEventListener('click', eliminar);
+  }
+  };
+
+
+
+    
+};
+
+function añadirCriticos() {
+  //Verificamos que el input no este vacio
+  
+
+  if(entrada.value)
+  {
+    const id = contador;
+    contador++;
+    var li = document.createElement("li");
+    li.className = "padre"
+    borrar.addEventListener("click", eliminar);
+   
+    
+ 
+    //Diferenciamos las ID de los elementos
+    li.innerHTML = `<p id="p${id}" class="critico">${entrada.value}<input type="checkbox" id="check${id}" class="check"></p>`;
+    lista2.appendChild(li);
+
+    var p = document.getElementById(`p${id}`);
+    var check = document.getElementById(`check${id}`);
+
+    entrada.value = '';
+  }
+
+   
+
+  
+   else if(entrada.value = " " )
+  {
+
+    alert("Escribe algo tio")
+    entrada.value = ""
+  }
+
+  function eliminar() {
+    if(check.checked)
+    {
+  
       li.remove(p)
       console.log("checkeado")
       //Eliminamos el eventListener
       borrar.removeEventListener('click', eliminar);
     }
-
-    
-}
+  };
 
 };
 
 
 
 
-var lista = document.getElementById("lista2");
+
+
+
+
+//variables Lista1
+var lista1 = document.getElementById("lista1");
 var entrada = document.getElementById("inputTexto");
-var botonAñadir = document.getElementById("botonAñadir");
-var botonFiambre = document.getElementById("fechaCorta")
-botonAñadir.addEventListener("click", añadir);
 var contador = 1;
 var borrar = document.getElementById('borrar');
+var botonAñadir = document.getElementById("botonAñadir");
+botonAñadir.addEventListener("click", añadir);
+
+
+//variables Lista2
+var lista2 = document.getElementById("lista2")
+var botonCriticos = document.getElementById("fechaCorta")
+botonCriticos.addEventListener("click", añadirCriticos)
+
 
 
 
