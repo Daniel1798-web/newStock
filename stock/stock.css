@@ -58,9 +58,7 @@ header
     background-color:  #300606;
     width: 20px;
     height: 20px;
-    margin-left: 10px;
     border-radius: 50%;
-    position: relative;
     border: 1px solid rgba(0, 0, 0, 0.15);
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
     float: right;
@@ -72,7 +70,12 @@ header
     background-color: red;
 }
 
- 
+ .side
+ {
+     display: flex;
+     flex-direction: row;
+     ;
+ }
 
 
 
@@ -84,7 +87,6 @@ header
     font-size:130%;
     width:500px;
     padding: 2px;
-    position: ;
     text-align: start;
     list-style: none;
     border-top: 2px solid black;
