@@ -19,12 +19,20 @@ header
     text-align: center;
 }
 
+
+
 .input-text
 {
-    color: rgb(255, 245, 245);
-    background-color: rgb(39, 26, 5);
+    color: rgb(2, 2, 2);
     font-family:monospace;
-    outline: auto;
+
+
+    background-image: url(icons/editar.png);
+    background-size: 20px;
+    background-position:100%;
+    background-repeat: no-repeat;
+    outline: none;
+    
 }
 
 
@@ -34,20 +42,42 @@ header
     
    background-color: rgb(0, 0, 0);
    
-    
+    padding: 0%;
 }
 
 .nar
 {
     background-color: rgb(255, 248, 252);
     color: rgb(0, 0, 0);
+    border: 2px solid black;
+    border-collapse:separate;
 }
+
+
 
 .check
 {
-    float: right;
     
+    background-color:  #300606;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
+    float: right;
 }
+
+.check:checked
+{
+    box-shadow: 0 0 0 3px rgb(245, 2, 2);
+    background-color: red;
+}
+
+ 
+
+
 
 
 .listanorm
@@ -70,7 +100,7 @@ header
 .lista2
 {
     text-align: center;
-    
+    padding: 0%;
   
 
 }
@@ -79,7 +109,7 @@ header
 {
 
     color: rgb(0, 0, 0);
-    background-image: url(https://p.kindpng.com/picc/s/492-4921477_caution-green-hd-png-download.png);
+    background-image: url(https//p.kindpng.com/picc/s/492-4921477_caution-green-hd-png-download.png);
     background-repeat: no-repeat;
     background-size: cover;
     font-size:130%;
@@ -96,7 +126,12 @@ header
 
 .critico
 {
- 
+background-image: url(icons/exclamation-mark-in-a-circle.png);
+background-repeat: no-repeat;
+background-size: 20px;
+background-position: 80%;
+
+border: 2px solid black;
 }
 
 
