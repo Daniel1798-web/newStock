@@ -115,9 +115,6 @@ function añadirCriticos() {
 
 //variables Lista1
 var lista1 = document.getElementById("lista1");
-var entrada = document.getElementById("inputTexto");
-var contador = 1;
-var borrar = document.getElementById('borrar');
 var botonAñadir = document.getElementById("botonAñadir");
 botonAñadir.addEventListener("click", añadir);
 
@@ -127,10 +124,10 @@ var lista2 = document.getElementById("lista2")
 var botonCriticos = document.getElementById("fechaCorta")
 botonCriticos.addEventListener("click", añadirCriticos)
 
-
-
-
-
+//Variables de Entrada y Salida
+var entrada = document.getElementById("inputTexto");
+var contador = 1;
+var borrar = document.getElementById('borrar');
 
 
 
