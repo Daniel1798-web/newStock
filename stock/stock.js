@@ -73,10 +73,12 @@ function añadirCriticos() {
     
  
     //Diferenciamos las ID de los elementos
-    li.innerHTML = `<p id="p${id}" class="critico">${entrada.value}
+    li.innerHTML = 
+    `<p type='text' id="p${id}" >${entrada.value}
+    <input type='button' id='editor'  value='Editar'>
     <input type="checkbox" id="check${id}" class="check" /></p>`;
-    lista2.appendChild(li);
 
+    lista2.appendChild(li);
     var p = document.getElementById(`p${id}`);
     var check = document.getElementById(`check${id}`);
 

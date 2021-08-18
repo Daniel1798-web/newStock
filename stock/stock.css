@@ -1,200 +1,41 @@
 
 body
 {
-   
-text-align: center;
-background-color: rgb(2, 253, 211);
- 
-}
-
-.mensaje
-{
-    color: red;
-}
-
-.botones
-{
-
-    
-    text-align: center;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
-    border-left: 5px solid black;
-    border-right: 5px solid black;
-    border-radius: 100px ;
-    padding: auto;
-    background-color: rgb(255, 255, 255);
-    font-size: 40px;
- 
-}
-
-
-
-.input-text 
-{
-    color: rgb(2, 2, 2);
-    font-family:monospace;
-    border-radius: 10px;
-    background-image: url(icons/editar.png);
-    background-size: 20px;
-    background-position:100%;
-    background-repeat: no-repeat;
-    outline: none;
-    margin-right: 200px;
-    
-    
-}
-
-button
-{
-    
-    color: rgb(2, 2, 2);
-    font-family:monospace;
-    border-radius: 10px;
-    margin-inline: 50px ;
-}
-
-button:hover
-{
-cursor: pointer;
-background-color: rgb(5, 125, 180) ;
-}
-
-.borrar 
-{
-    background-attachment: fixed;
-}
-
-.borrar:hover
-{
-    background-color: red;
-    cursor:;
-}
-
-.linew
-{
-    
-   background-color: rgb(255, 47, 47);
-   font-size: 110%;
-    padding: 0%;
-}
-
-.nar
-{
-    background-color: rgb(255, 248, 252);
-    color: rgb(0, 0, 0);
-    border: 2px solid black;
-    border-collapse:separate;
-    font-size: 120%;
-    
-}
-
-
-
-.check
-{
-    font-size: 100%;
-    background-color:  #300606;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
-    float: right;
-}
-
-.check:hover
-{
-    cursor: pointer;
-}
-
- .side
- {
-     display: flex;
-     align-content: flex-start;
-     justify-content:center;
-     padding: 2px;
-     
- }
-
-
-
-
-.listanorm
-{
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    font-size:100%;
-    width:500px;
-    padding: 2px;
-    text-align: center;
-    list-style: none;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid rgb(0, 0, 0);
-    border-radius: 10px;
-}
-
-.normList
-{
-    font-size: 105%;
-}
-
-.lista2
-{
-    text-align: center;
-    padding: 0%;
-  
-
-}
-
-.listaCritico
-{
-
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    font-size:100%;
-    width:650px;
-    padding: 0px;
-    margin-left: auto;  
-    text-align: center;
-    list-style: none;
-    border-top: 2px solid rgb(0, 0, 0);
-    border-bottom: 2px solid black;
-    border-left: 2px solid rgb(7, 7, 7);
-    border-right: 2px solid black;
-    border-radius: 10px;
-}
-
-.criticTitle
-{
-    font-size: 105%;
-    
-}
-
-.padre
-{
-    padding: 0%;
+    background-color: rgb(233, 230, 230);
     margin: 0%;
-    font-size: 110%;
+    padding: 0%;
 }
 
-.critico
+
+
+.panelBotones
 {
-background-image: url(icons/exclamation-mark-in-a-circle.png);
-background-repeat: no-repeat;
-background-size: 20px;
-background-position: 80%;
-border: 2px solid black;
-color: rgb(0, 0, 0);
-font-size: 120%;
-padding: 1px;
-
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0%;
+    padding: 1%;
 }
 
 
+.tableroListaUno
+{
+    display: flex;
+    text-align: flex-start;
+    justify-content: start;
+    background-color: whitesmoke;
+    box-shadow: 2px  rgb(233, 0, 0);
+    
+}
 
+.listaUno
+{
+background-color: whitesmoke;
+}
 
+.titulo
+{
+    background-color: yellow;
+    
+}
 
 
