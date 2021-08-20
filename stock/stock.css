@@ -4,18 +4,37 @@ body
     background-color: rgb(233, 230, 230);
     margin: 0%;
     padding: 0%;
+    
 }
 
 
 
-.panelBotones
+.panel
 {
+    display: flex;
+   justify-content: space-evenly;
     background-color: rgb(255, 255, 255);
-    text-align: center;
     margin: 0%;
     padding: 1%;
+    box-shadow: 20px 20px 2px rgb(0, 0, 0);
+   
 }
 
+.textoBoton
+{
+ padding: 10px;
+}
+
+
+
+
+.texto 
+{
+    background-color: chocolate;
+    font-size: 250%;
+ 
+
+}
 
 .tableroListaUno
 {
@@ -23,7 +42,8 @@ body
     text-align: flex-start;
     justify-content: start;
     background-color: whitesmoke;
-    box-shadow: 2px  rgb(233, 0, 0);
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
+    
     
 }
 
