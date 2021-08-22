@@ -5,9 +5,9 @@ body
     margin: 0%;
     padding: 0%;
     display: flex;
-    
-justify-content: space-between;
-
+    flex-direction: column;
+     flex-wrap: wrap;
+   
 }
 
 
@@ -15,52 +15,64 @@ justify-content: space-between;
 .panel
 {
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    background-color: rgb(255, 255, 255);
-    margin: 0%;
-    padding: 1%;
-    box-shadow: 20px 20px 2px rgb(0, 0, 0);
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    background-color: rgb(255, 247, 247);
+    margin:0%;
+    padding: 10px;
+    box-shadow: 10px 10px 2px rgb(14, 14, 14);
    
 }
 
-.textoBoton
+
+.añadirL, .añadirC , .borrar
 {
-
-
- padding: 10px;
+    background-color: rgb(62, 64, 223);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 5px;
+    width: 10%;
+    height: 40%;
+ 
+    
 }
-
 
 
 
 .texto 
-{
-    flex-grow: 1;
-    background-color: chocolate;
+{  
     
- 
-
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: 40%;
+    border: 2px solid rgb(163, 154, 154) ;
+    border-radius: 20px;
+    text-decoration: none;
+    outline: none;
+    font-size: 150%;
 }
 
-.tableroListaUno
-{
-    display: flex;
-    flex-direction: column;
-    background-color: whitesmoke;
-    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
-    
-    
-}
+
 
 .listaUno
 {
-background-color: whitesmoke;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    background-color: rgb(236, 236, 236);
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
+    
+
+    background-color: rgb(255, 255, 255);
 }
 
 .titulo
 {
-    background-color: yellow;
+    background-color: rgb(243, 239, 239);
     
 }
 
