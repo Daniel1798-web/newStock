@@ -28,6 +28,12 @@ function añadir() {
 
    
 
+  if( li = true)
+  {
+    tablerito.className="tableroListaUnocreado";
+    console.log("hello")
+  }
+
   
    else if(entrada.value = " " )
   {
@@ -51,11 +57,13 @@ function añadir() {
     //Eliminamos el eventListener
     borrar.removeEventListener('click', eliminar);
   }
-  };
+
+ 
+  
 
 
 
-    
+}
 };
 
 function añadirCriticos() {
@@ -131,7 +139,7 @@ var contador = 1;
 var borrar = document.getElementById('borrar');
 
 
-
+var tablerito = document.getElementById("tablerito");
 
 
 //Metodo kayrox
