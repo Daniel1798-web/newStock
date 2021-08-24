@@ -74,7 +74,7 @@ function añadirCriticos() {
  
     //Diferenciamos las ID de los elementos
     li.innerHTML = 
-    `<p type='text' id="p${id}" >${entrada.value}
+    `<p type='text' id="p${id}" class='nar'>${entrada.value}
     <input type="checkbox" id="check${id}" class="check" /></p>`;
 
     lista2.appendChild(li);
