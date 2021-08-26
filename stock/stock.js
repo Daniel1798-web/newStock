@@ -7,11 +7,7 @@ function añadir() {
   {
     const id = contador;
     contador++;
-   
-  
-    
-   
-  var li = document.createElement("li");
+    var li = document.createElement("li");
     li.className = "linew"
  
     //Diferenciamos las ID de los elementos
@@ -21,6 +17,7 @@ function añadir() {
     borrar.addEventListener("click", eliminar);
     var check = document.getElementById(`check${id}`);
  
+    tablerito.className = "tableroListaUnocreado"
     
   
     entrada.value = '';
@@ -28,14 +25,9 @@ function añadir() {
 
    
 
-  if( li = true)
-  {
-    tablerito.className="tableroListaUnocreado";
-    console.log("hello")
-  }
 
   
-   else if(entrada.value = " " )
+    else if(entrada.value = " " )
   {
 
     alert("Escribe algo tio")
@@ -90,17 +82,24 @@ function añadirCriticos() {
     var check = document.getElementById(`check${id}`);
 
     entrada.value = '';
+    
+      tablerito2.className="tableroListaUnocreado";
+    
   }
-
+  
    
 
-  
-   else if(entrada.value = " " )
+ else if(entrada.value = " " )
   {
 
     alert("Escribe algo tio")
     entrada.value = ""
   }
+
+
+  
+
+
 
   function eliminar() {
     if(check.checked)
@@ -111,7 +110,11 @@ function añadirCriticos() {
       //Eliminamos el eventListener
       borrar.removeEventListener('click', eliminar);
     }
+
+
   };
+
+ 
 
 };
 
@@ -140,7 +143,7 @@ var borrar = document.getElementById('borrar');
 
 
 var tablerito = document.getElementById("tablerito");
-
+var tablerito2 = document.getElementById("tableritoDos")
 
 //Metodo kayrox
 // /**@type {Array<{ li: HTMLLIElement, check: HTMLInputElement }>} */
