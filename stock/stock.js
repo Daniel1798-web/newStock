@@ -1,7 +1,6 @@
 // Metodo daniel
 function añadir() {
   //Verificamos que el input no este vacio
-  
 
   if(entrada.value)
   {
@@ -9,6 +8,7 @@ function añadir() {
     contador++;
     var li = document.createElement("li");
     li.className = "linew"
+   
  
     //Diferenciamos las ID de los elementos
     li.innerHTML = `<p id="p${id}" class="nar">${entrada.value}<input type="checkbox" id="check${id}" class="check"></p>`;
@@ -19,8 +19,11 @@ function añadir() {
  
     tablerito.className = "tableroListaUnocreado"
     
+
   
     entrada.value = '';
+
+
   }
 
    
@@ -43,11 +46,14 @@ function añadir() {
   if(check.checked)
   {
 
-  
-    li.remove(p)
     console.log("checkeado")
+    li.remove(p)
+  
     //Eliminamos el eventListener
     borrar.removeEventListener('click', eliminar);
+    
+    
+
   }
 
  
@@ -64,6 +70,7 @@ function añadirCriticos() {
 
   if(entrada.value)
   {
+
     const id = contador;
     contador++;
     var li = document.createElement("li");
@@ -104,11 +111,16 @@ function añadirCriticos() {
   function eliminar() {
     if(check.checked)
     {
-  
+      
+      console.log("checkeado" + contador)
       li.remove(p)
-      console.log("checkeado")
       //Eliminamos el eventListener
       borrar.removeEventListener('click', eliminar);
+
+
+      
+     
+
     }
 
 
@@ -126,6 +138,7 @@ function añadirCriticos() {
 
 
 //variables Lista1
+
 var lista1 = document.getElementById("lista1");
 var botonAñadir = document.getElementById("botonAñadir");
 botonAñadir.addEventListener("click", añadir);
@@ -138,12 +151,17 @@ botonCriticos.addEventListener("click", añadirCriticos)
 
 //Variables de Entrada y Salida
 var entrada = document.getElementById("inputTexto");
-var contador = 1;
+  
+var contador = 0;
+
 var borrar = document.getElementById('borrar');
 
 
 var tablerito = document.getElementById("tablerito");
 var tablerito2 = document.getElementById("tableritoDos")
+
+
+
 
 //Metodo kayrox
 // /**@type {Array<{ li: HTMLLIElement, check: HTMLInputElement }>} */

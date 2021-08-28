@@ -1,0 +1,41 @@
+body
+{
+    margin: 0%;
+    padding: 0%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    
+}
+
+.div-padre
+{
+    background-color: rgb(236, 173, 173);
+    margin: 0%;
+    padding: 0%;
+    
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+
+}
+
+
+
+.boton-menu
+{
+    background:url(menubuttonofthreelinesoutliñne_112563.png );
+    margin: 0%;
+    padding: 0%;
+    
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    font-size: 150%;
+    box-sizing: border-box;
+    width: 10%;
+   
+   
+}
