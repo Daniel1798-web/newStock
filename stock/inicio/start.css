@@ -1,5 +1,6 @@
 body
 {
+
     margin: 0%;
     padding: 0%;
 
@@ -12,6 +13,7 @@ body
 
 .div-padre
 {
+    
     background-color: rgb(236, 173, 173);
     margin: 0%;
     padding: 0%;
@@ -24,18 +26,20 @@ body
 
 
 
+
 .boton-menu
 {
-    background:url(menubuttonofthreelinesoutliñne_112563.png );
+  
     margin: 0%;
     padding: 0%;
-    
+    background-image: url(menu.png);
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
     font-size: 150%;
     box-sizing: border-box;
     width: 10%;
+    font-size: ;
    
    
 }
