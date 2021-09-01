@@ -1,45 +1,17 @@
-body
-{
-
-    margin: 0%;
-    padding: 0%;
-
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    
-    
+body{
+    margin:0px;
+    padding:0px;
+    background-color: rgb(206, 206, 206);
 }
 
-.div-padre
+.hiden
 {
-    
-    background-color: rgb(236, 173, 173);
-    margin: 0%;
-    padding: 0%;
-    
-    display: flex;
-    justify-content: start;
-    flex-wrap: wrap;
-
+    background-color: rgb(206, 206, 206);;
+    color:rgb(206, 206, 206);;
 }
 
-
-
-
-.boton-menu
+.revelado
 {
-  
-    margin: 0%;
-    padding: 0%;
-    background-image: url(menu.png);
-    display: flex;
-    justify-content:center;
-    flex-wrap: wrap;
-    font-size: 150%;
-    box-sizing: border-box;
-    width: 10%;
-    font-size: ;
-   
-   
+    background-color: black;
+    color: yellow;
 }
