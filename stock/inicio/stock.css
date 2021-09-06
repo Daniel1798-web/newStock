@@ -12,12 +12,15 @@ body
 
 
 
+
 .panel
 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: rgb(255, 247, 247);
     margin:0%;
     padding: 10px;
@@ -29,6 +32,7 @@ body
 
 .añadirL, .añadirC , .borrar
 {
+
     display: flex;
     justify-content: center;
     background-color: rgb(62, 64, 223);
