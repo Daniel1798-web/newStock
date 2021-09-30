@@ -82,21 +82,30 @@ body
 }
 
 
-
+.divMas
+{
+    background-color: blueviolet;
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+}
 
 
 .divsito
 {
 
     display: flex;
-flex: 0 0;
+    flex: 0 0;
+    
+    flex-direction: column;
 }
 
 
 .imagen1
 {
    
-    width: 50%;
+    width: 25%;
+    height: 1%;
     margin: 1%;
     border-top: 2px solid  rgb(6, 40, 63);
     border-bottom: 2px solid rgb(6, 40, 63);
@@ -104,7 +113,44 @@ flex: 0 0;
     border-right: 2px solid rgb(6, 40, 63);
 }
 
+.imagen2
+{
+    width: 25%;
+    height: 25%;
+    margin: 1%;
+    border-top: 2px solid  rgb(6, 40, 63);
+    border-bottom: 2px solid rgb(6, 40, 63);
+    border-left: 2px solid rgb(6, 40, 63);
+    border-right: 2px solid rgb(6, 40, 63);
+}
 
+.imagen3
+{
+    width: 25%;
+    height: 25%;
+    margin: 1%;
+    border-top: 2px solid  rgb(6, 40, 63);
+    border-bottom: 2px solid rgb(6, 40, 63);
+    border-left: 2px solid rgb(6, 40, 63);
+    border-right: 2px solid rgb(6, 40, 63);
+}
+
+.divsito2
+{
+    background-color: brown;
+    display: flex;
+    
+    flex: 0,0;
+    flex-direction: column;
+    
+}
+
+.parrafo
+{
+    display: flex;
+    justify-content: right;
+    
+}
 
 .elemento
 {
