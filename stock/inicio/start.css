@@ -43,12 +43,7 @@ body
 }
 
 
-.link
-{
-    text-decoration: none;
-    font-size: 150%;
-    text-decoration: none;
-}
+
 
 .inicio_menu
 {
@@ -103,7 +98,7 @@ body
 
 .imagen1
 {
-   
+   display: block;
     width: 25%;
     height: 1%;
     margin: 1%;
@@ -115,7 +110,7 @@ body
 
 .imagen2
 {
-    
+    display: block;
     width: 25%;
     height: 25%;
     margin: 1%;
@@ -125,8 +120,16 @@ body
     border-right: 2px solid rgb(6, 40, 63);
 }
 
+.link
+{
+    text-decoration: none;
+    display: block;
+    text-decoration: none;
+}
+
 .imagen3
 {
+    display: block;
     width: 25%;
     height: 25%;
     margin: 1%;
