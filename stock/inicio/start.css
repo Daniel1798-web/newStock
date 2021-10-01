@@ -47,7 +47,7 @@ body
 {
     text-decoration: none;
     font-size: 150%;
-  
+    text-decoration: none;
 }
 
 .inicio_menu
@@ -115,6 +115,7 @@ body
 
 .imagen2
 {
+    
     width: 25%;
     height: 25%;
     margin: 1%;
