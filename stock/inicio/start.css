@@ -1,3 +1,4 @@
+
 html
 {
     height: 100%;
@@ -7,13 +8,13 @@ body
     height: 100%;
     margin: 0%;
     padding: 0%;
-    background-color: rgb(255, 250, 250);
+    background-color: rgb(235, 235, 235);
     display: flex;
     flex-direction: column;
+    
 
 
 }
-
 .cabecera
 {
     display: flex;
@@ -28,7 +29,7 @@ body
     border-bottom: 2px solid rgb(0, 0, 0);
     border-left: 2px solid rgb(0, 0, 0);
     border-right: 2px solid rgb(0, 3, 5);
-
+    height: 5%;
 }
 
 .tituloDonato
@@ -68,8 +69,7 @@ body
 .tituloDonato1
 {
   
-    display: flex;
-    justify-content: space-between;
+  
     margin: 0%;
     padding: 0%;
     list-style: none;
@@ -80,52 +80,82 @@ body
    
 }
 
+.espace
+{
+    height: 25%;
+    background-color: rgb(235, 235, 235);
+}
 
 .divMas
 {
     background-color: rgb(235, 235, 235);
-    margin: 0%;
-    padding: 0%;
-    height: 90%;
-    width: 100%;
- 
-}
-
-
-.divsito
-{
-
     display:flex;
-    flex: 0 0;
-   justify-content: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction:row;
     
 }
 
 
+.divImagenes
+{
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.div1
+{
+    width: 1000%;
+    height: 100%;
+
+}
+
+
+
 .imagen1
 {
-   display: flex;
-    width: 25%;
-    height: 1%;
-    margin: 1%;
+   
+    height: auto;
+    width: 90%;
+    height: 100%;
+    margin: 0%;
     border-top: 2px solid  rgb(6, 40, 63);
     border-bottom: 2px solid rgb(6, 40, 63);
     border-left: 2px solid rgb(6, 40, 63);
     border-right: 2px solid rgb(6, 40, 63);
+    border-radius: 10%;
+    object-fit: cover;
+    object-position: center;
+   
+}
+
+.imagen1:hover
+{
+    cursor: pointer;
+}
+
+.div2
+{
+    width: 1000%;
+    height: 100%;
 }
 
 .imagen2
 {
  
-    display:flex;
-    width: 25%;
-    height: 25%;
-    margin: 1%;
+   height: auto;
+    width: 90%;
+    height: 100%;
+    margin: 0%;
     border-top: 2px solid  rgb(6, 40, 63);
     border-bottom: 2px solid rgb(6, 40, 63);
     border-left: 2px solid rgb(6, 40, 63);
     border-right: 2px solid rgb(6, 40, 63);
+    border-radius: 10%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .imagen2:hover
@@ -133,34 +163,100 @@ body
     cursor: pointer;
 }
 
+.div3
+{
+    width: 1000%;
+    height: 100%;
+}
 .imagen3
 {
-    display: flex;
-    width: 25%;
-    height: 25%;
-    margin: 1%;
+    height: 100%;
+    width: 90%;
+    margin: 0%;
     border-top: 2px solid  rgb(6, 40, 63);
     border-bottom: 2px solid rgb(6, 40, 63);
     border-left: 2px solid rgb(6, 40, 63);
     border-right: 2px solid rgb(6, 40, 63);
+    border-radius: 10%;
+    object-fit: cover;
+    object-position: center;
 }
 
-.divsito2
+.imagen3:hover
 {
-    background-color: brown;
-    display: flex;
+    cursor: pointer;
+}
+
+
+
+.divsitoText
+{
     
-    flex: 0,0;
-    flex-direction: column;
+    display:flex;
+    justify-content:space-between;
+    flex-direction: row;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+  
+
+    
     
 }
 
 .parrafo
 {
-    display: flex;
-    justify-content: right;
+    
+    
+    width: 80%;
+    height: 10%;
+    border: 2px solid rgb(194, 191, 191) ;
+    border-radius: 20px;
+    text-decoration: none;
+    outline: none;
+    font-size: 150%;
+    margin-left: 10%;
+    object-fit: cover;
+object-position: center;
     
 }
+
+
+.parrafo1
+{
+    
+    width: 80%;
+    height: 10%;
+    border: 2px solid rgb(194, 191, 191) ;
+    border-radius: 20px;
+    text-decoration: none;
+    outline: none;
+    font-size: 150%;
+    margin-right: 12%;
+    margin-left: 10%;
+    text-align: center;
+    object-fit: cover;
+    object-position: center;
+}
+
+.parrafo2
+{
+   
+    width: 80%;
+    height: 10%;
+    border: 2px solid rgb(194, 191, 191) ;
+    border-radius: 20px;
+    text-decoration: none;
+    outline: none;
+    font-size: 150%;
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+    object-fit: cover;
+object-position: center;
+}
+
+
 
 .elemento
 {
@@ -169,52 +265,25 @@ body
     border: 2px solid black;
 }
 
-.hiden
-{
-    background-color: rgb(15, 15, 15) ;
-    color:rgb(255, 251, 251);;
-    list-style: none;
-    font-size: 150%;
-    width: 4%;
-    padding: 1%;
-}
-
-.revelado
-{
-    font-size: 150%;
-    background-color: black;
-    color: white;
-    box-sizing: border-box;
-    width: 10%;
-    border-top: 2px solid yellow;
-    border-bottom: 2px solid yellow;
-    border-left: 2px solid yellow;
-    border-right: 2px solid yellow;
-    list-style: none;
-    text-align: center;
-}
 
 
 
 
 .contact-footer
 {
-    color: rgb(196, 255, 78);
+    color: rgb(243, 243, 4);
     display: flex;
     justify-content: start;
 
     margin: 0%;
     padding: 0%;
     flex:0 1;
-    width: 100%;
+   width: 100%;
     background-color:  rgb(16, 5, 177);;
     position: absolute;
     bottom: 0;
+   
     width: 100%;
-    
-
-
-
 
 
 
@@ -226,6 +295,7 @@ body
     display: flex;
     justify-content: start;
     margin: 1%;
+    font-size: 150%;
     width: 50%;
 }
 
@@ -233,6 +303,326 @@ body
 {
     display: flex;
     justify-content: end;
+    font-size: 150%;
     margin: 1%;
     width: 50%;
 }
+
+
+
+@media (max-width: 640px) 
+{
+   
+html
+{
+    height: 100%;
+}
+body
+{
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(235, 235, 235);
+    
+    
+
+
+}
+.cabecera
+{
+    display: flex;
+    flex: 0 0 auto;
+ justify-content: space-evenly;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: rgb(16, 5, 177);
+    color: yellow;
+    border-top: 2px solid  rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-left: 2px solid rgb(0, 0, 0);
+    border-right: 2px solid rgb(0, 3, 5);
+    height: 5%;
+}
+
+.tituloDonato
+{
+   
+    display: flex;
+    justify-content: space-between;
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+   width: 10%;
+
+}
+
+
+
+
+.inicio_menu
+{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 150%;
+    margin: 0%;
+    
+    color: yellow;
+    box-sizing: border-box;
+    width: 10%;
+ 
+    list-style: none;
+    text-align: center;
+  
+    text-decoration: none;
+}
+
+
+.tituloDonato1
+{
+  
+  
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+  
+    font-size: 200%;
+    width: 10%;
+
+   
+}
+
+.espace
+{
+    height: 0%;
+}
+
+.divMas
+{
+    background-color: rgb(235, 235, 235);
+    display:flex;
+    flex-wrap:nowrap;
+    flex-direction:column;
+    
+}
+
+
+.divImagenes
+{
+    display: flex;
+    justify-content:space-between;
+    margin: 1%;
+    width: 100%;
+  flex-direction: column;
+    
+}
+
+.div1
+{
+    display: flex;
+    width: 100% ;
+    height: 100% ;
+}
+
+.imagen1
+{
+    width: 40%;
+    height: 100%;
+    margin: 0%;
+    border-top: 2px solid  rgb(6, 40, 63);
+    border-bottom: 2px solid rgb(6, 40, 63);
+    border-left: 2px solid rgb(6, 40, 63);
+    border-right: 2px solid rgb(6, 40, 63);
+    border-radius: 10%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.imagen1:hover
+{
+    cursor: pointer;
+}
+
+.div2
+{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin-top: 2%;
+}
+.imagen2
+{
+ 
+   
+    width: 40%;
+    height: 100%;
+    margin: 0%;
+    border-top: 2px solid  rgb(6, 40, 63);
+    border-bottom: 2px solid rgb(6, 40, 63);
+    border-left: 2px solid rgb(6, 40, 63);
+    border-right: 2px solid rgb(6, 40, 63);
+    border-radius: 10%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.imagen2:hover
+{
+    cursor: pointer;
+}
+
+.div3
+{
+   display: flex;
+    height: 100%;
+    width: 100%;
+    margin-top: 2%;
+}
+
+
+.imagen3
+{
+  
+   width: 40%;
+   height: 80%;
+    margin: 0%;
+    border-top: 2px solid  rgb(6, 40, 63);
+    border-bottom: 2px solid rgb(6, 40, 63);
+    border-left: 2px solid rgb(6, 40, 63);
+    border-right: 2px solid rgb(6, 40, 63);
+    border-radius: 10%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.imagen3:hover
+{
+    cursor: pointer;
+}
+
+
+
+.divsitoText
+{
+    
+    display:flex;
+    justify-content:start;
+    flex-direction: column;
+    
+    width: 100%;
+   
+    
+    margin: 1%;
+    padding: 0%;
+
+    
+    
+}
+
+.parrafo
+{
+    text-align: center;
+    margin-top: 10%;
+    margin-right: 10%;
+    width: 100%;
+    height: 25%;
+    padding: 0%;
+   
+    border-top: 2px solid  rgb(6, 40, 63);
+    border-bottom: 2px solid rgb(6, 40, 63);
+    border-left: 2px solid rgb(6, 40, 63);
+    border-right: 2px solid rgb(6, 40, 63);
+    object-fit: cover;
+    object-position: center;
+    
+    
+}
+
+.parrafo2
+{
+    text-align:center;
+    
+    width: 100%;
+    height:30%;
+    padding: 0%;
+   
+    border-top: 2px solid  rgb(6, 40, 63);
+    border-bottom: 2px solid rgb(6, 40, 63);
+    border-left: 2px solid rgb(6, 40, 63);
+    border-right: 2px solid rgb(6, 40, 63);
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.parrafo1
+{
+   text-align: center;
+    width: 100%;
+    height: 30%;
+    padding: 0%;
+   
+    border-top: 2px solid  rgb(6, 40, 63);
+    border-bottom: 2px solid rgb(6, 40, 63);
+    border-left: 2px solid rgb(6, 40, 63);
+    border-right: 2px solid rgb(6, 40, 63);
+    
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.elemento
+{
+    display: flex;
+    justify-content: start;
+    border: 2px solid black;
+}
+
+
+
+
+
+.contact-footer
+{
+    color: yellow;
+    display: flex;
+    justify-content: start;
+
+    margin: 0%;
+    padding: 0%;
+    flex:0 1;
+   width: 100%;
+    background-color:  rgb(16, 5, 177);;
+    position: absolute;
+    bottom: 0;
+   
+    width: 100%;
+
+
+
+  
+}
+
+.p1-footer
+{
+    display: flex;
+    justify-content: start;
+    margin: 1%;
+    font-size: 150%;
+    width: 50%;
+}
+
+.p2-footer
+{
+    display: flex;
+    justify-content: end;
+    font-size: 150%;
+    margin: 1%;
+    width: 50%;
+}
+
+} 
+    
